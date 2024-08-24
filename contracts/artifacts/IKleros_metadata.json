@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_choices",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_extraData",
+						"type": "bytes"
+					}
+				],
+				"name": "createDispute",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "disputeID",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_disputeID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_ruling",
+						"type": "uint256"
+					}
+				],
+				"name": "rule",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HRSKleros.sol": "IKleros"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HRSKleros.sol": {
+			"keccak256": "0x9fd53c301d226a2908cae018c58f201ed0d1eb4ae8368e566f39a344372914b6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d9ecdf703e60310536e21841c48bc19148c235c0ef4b437734d093f5657ab47",
+				"dweb:/ipfs/QmYFbzrPqNHcmES9GJdL2unCpDWh1ARtoaZbyrGRZ2epq4"
+			]
+		}
+	},
+	"version": 1
+}
