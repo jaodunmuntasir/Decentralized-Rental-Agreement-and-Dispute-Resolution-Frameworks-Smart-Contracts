@@ -460,6 +460,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "initializeCurrentSecurityDeposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "isActive",
 				"outputs": [
 					{
@@ -861,11 +868,11 @@
 	},
 	"sources": {
 		"contracts/HRSKleros.sol": {
-			"keccak256": "0x12372c0bc2a853e537dcdaf3b1f74cdb53a7c1f88308005f8c7971a47242e8a6",
+			"keccak256": "0xd7ec15064e4c4aa49d981057d76dc7ce5282c5d17d4f694992e8a4c300de7f6a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://04dc761cc82ba6fbbf9e032634e4a8f35aa6c5ed711cc58f2de7820b9bf5fa95",
-				"dweb:/ipfs/QmTtmc26GP9d1nKhcwJybiPN6yy95LRcEiX7a7fxZGTr2x"
+				"bzz-raw://051db24f27a5435a2e0ca470dd03e3d0a50e91d219d0ce631487065494306b37",
+				"dweb:/ipfs/Qmb1nRMfjeivptD6c5dVs62JsZRsXthMeMvypzs9fUZHE7"
 			]
 		}
 	},

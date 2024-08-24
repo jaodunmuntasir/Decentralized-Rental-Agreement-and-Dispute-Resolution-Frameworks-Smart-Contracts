@@ -98,6 +98,13 @@ contract HouseRentalAgreement is IArbitrable {
         currentMonth = 1;
     }
 
+    function initializeCurrentSecurityDeposit() external {
+        require(msg.sender == landlord, "Only landlord can initialize current security deposit");
+        require(isActive, "Contract must be active");
+        require(currentSecurityDeposit == 0, "Current security deposit already initialized");
+        currentSecurityDeposit = securityDeposit;
+    }
+
     function recordUtilities(uint256 _utilities) external {
         require(msg.sender == landlord, "Only landlord can record utilities");
         require(isActive, "Contract is not active");
