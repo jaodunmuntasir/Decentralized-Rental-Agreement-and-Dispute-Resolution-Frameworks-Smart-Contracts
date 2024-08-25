@@ -14,7 +14,7 @@
 					},
 					{
 						"internalType": "address",
-						"name": "_klerosAddress",
+						"name": "_arbitratorAddress",
 						"type": "address"
 					}
 				],
@@ -44,6 +44,12 @@
 					}
 				],
 				"name": "AgreementTermsSet",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "ContractActivated",
 				"type": "event"
 			},
 			{
@@ -284,19 +290,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "activateContract",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "arbitrationCost",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "arbitrator",
+				"outputs": [
+					{
+						"internalType": "contract ILocalArbitrator",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -391,6 +403,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_disputeID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_ruling",
+						"type": "uint256"
+					}
+				],
+				"name": "executeRuling",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -506,38 +536,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "kleros",
-				"outputs": [
-					{
-						"internalType": "contract IArbitrator",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "landlord",
 				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "landlordAccepted",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -704,19 +708,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "renterAccepted",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "renterCounterEstimate",
 				"outputs": [
 					{
@@ -739,24 +730,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_disputeID",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_ruling",
-						"type": "uint256"
-					}
-				],
-				"name": "rule",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -853,7 +826,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/HRSKleros.sol": "HouseRentalAgreement"
+			"contracts/HRSLocalArbitrator.sol": "HouseRentalAgreement"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -867,12 +840,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/HRSKleros.sol": {
-			"keccak256": "0xd7ec15064e4c4aa49d981057d76dc7ce5282c5d17d4f694992e8a4c300de7f6a",
+		"contracts/HRSLocalArbitrator.sol": {
+			"keccak256": "0x5a0d8abf216634c08cef622fb2a6c45dc4b890a1600007bea167d042a930199c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://051db24f27a5435a2e0ca470dd03e3d0a50e91d219d0ce631487065494306b37",
-				"dweb:/ipfs/Qmb1nRMfjeivptD6c5dVs62JsZRsXthMeMvypzs9fUZHE7"
+				"bzz-raw://225b6778bac15d4ac4c269d50e20e93726ac32a953e85d62ef147ac9094918c1",
+				"dweb:/ipfs/QmacpmUBxFc3LRdcaJLQz21nHy1w1JSZ7Vpk58Vg1HC6s7"
 			]
 		}
 	},

@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_landlordEstimate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_renterEstimate",
+						"type": "uint256"
+					}
+				],
+				"name": "createDispute",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getArbitrationCost",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HRSLocalArbitrator.sol": "ILocalArbitrator"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HRSLocalArbitrator.sol": {
+			"keccak256": "0x5a0d8abf216634c08cef622fb2a6c45dc4b890a1600007bea167d042a930199c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://225b6778bac15d4ac4c269d50e20e93726ac32a953e85d62ef147ac9094918c1",
+				"dweb:/ipfs/QmacpmUBxFc3LRdcaJLQz21nHy1w1JSZ7Vpk58Vg1HC6s7"
+			]
+		}
+	},
+	"version": 1
+}

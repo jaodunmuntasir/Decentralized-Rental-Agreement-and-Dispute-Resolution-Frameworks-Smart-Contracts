@@ -1,0 +1,265 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_arbitrator",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "disputeId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "rentalContract",
+						"type": "address"
+					}
+				],
+				"name": "DisputeCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "disputeId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ruling",
+						"type": "uint256"
+					}
+				],
+				"name": "DisputeResolved",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "arbitrator",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_landlordEstimate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_renterEstimate",
+						"type": "uint256"
+					}
+				],
+				"name": "createDispute",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "disputeCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "disputes",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "rentalContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "landlordEstimate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "renterEstimate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isResolved",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ruling",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getArbitrationCost",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_disputeId",
+						"type": "uint256"
+					}
+				],
+				"name": "getDispute",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "rentalContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "landlordEstimate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "renterEstimate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isResolved",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ruling",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_disputeId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_ruling",
+						"type": "uint256"
+					}
+				],
+				"name": "resolveDispute",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawFees",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LocalArbitrator.sol": "LocalArbitrator"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LocalArbitrator.sol": {
+			"keccak256": "0x92aa2495b5cd45dd32972188cebd2052260e9640e23c2f5b397a490e9800d7b1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c8980dd144a8fbbd0125670b9302126a9400e47b4040c047ce0f6b7efb451ec8",
+				"dweb:/ipfs/Qmc2wZrT172qdpk5PEUNZkvkVWzGnW3RwwSXBJsty7sbz3"
+			]
+		}
+	},
+	"version": 1
+}
