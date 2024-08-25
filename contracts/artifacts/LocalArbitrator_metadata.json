@@ -253,11 +253,11 @@
 	},
 	"sources": {
 		"contracts/LocalArbitrator.sol": {
-			"keccak256": "0x92aa2495b5cd45dd32972188cebd2052260e9640e23c2f5b397a490e9800d7b1",
+			"keccak256": "0xa378f8eb8321c29e0511f7651669b9a1fd63c29ed553bbd7e7817e6a124be3cd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c8980dd144a8fbbd0125670b9302126a9400e47b4040c047ce0f6b7efb451ec8",
-				"dweb:/ipfs/Qmc2wZrT172qdpk5PEUNZkvkVWzGnW3RwwSXBJsty7sbz3"
+				"bzz-raw://cada24b7dfb442f3404e97cbf1578b7af20a4657564a5227b20ee0c618f4cd9c",
+				"dweb:/ipfs/QmXfzgjfCMmWpyHCFajMy64qDQtBLMDi6rt6cnTwW2dkCk"
 			]
 		}
 	},

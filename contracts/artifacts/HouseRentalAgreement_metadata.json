@@ -153,6 +153,37 @@
 					{
 						"indexed": true,
 						"internalType": "address",
+						"name": "landlord",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "landlordAmount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "renter",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "renterAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "FundsDistributed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
 						"name": "to",
 						"type": "address"
 					},
@@ -841,11 +872,11 @@
 	},
 	"sources": {
 		"contracts/HRSLocalArbitrator.sol": {
-			"keccak256": "0x5a0d8abf216634c08cef622fb2a6c45dc4b890a1600007bea167d042a930199c",
+			"keccak256": "0x12fd6c80b4a06d95e1ca9532c2801a0e11307b65eb02d2e5d564039826d44f69",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://225b6778bac15d4ac4c269d50e20e93726ac32a953e85d62ef147ac9094918c1",
-				"dweb:/ipfs/QmacpmUBxFc3LRdcaJLQz21nHy1w1JSZ7Vpk58Vg1HC6s7"
+				"bzz-raw://9db88bffd6dfbef4c090e34026434c6f76363cbdf1784100fa1653501b400ad1",
+				"dweb:/ipfs/QmeDvPSYz1zLcesR6wsGkhnkmwL4FwyBrnn5CjqxnptLhv"
 			]
 		}
 	},

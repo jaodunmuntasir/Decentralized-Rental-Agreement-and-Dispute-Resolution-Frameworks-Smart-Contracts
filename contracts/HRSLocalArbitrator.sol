@@ -280,25 +280,8 @@ contract HouseRentalAgreement {
 
         isActive = false;
         uint256 dueAmount = dueRent;
-        uint256 refund = 0;
 
-        if (dueAmount > 0) {
-            if (dueAmount > currentSecurityDeposit) {
-                dueAmount = currentSecurityDeposit;
-            }
-            pendingWithdrawals[landlord] += dueAmount;
-            refund = currentSecurityDeposit - dueAmount;
-        } else {
-            refund = currentSecurityDeposit;
-        }
-
-        if (refund > 0) {
-            pendingWithdrawals[renter] += refund;
-        }
-
-        emit ContractEnded(refund, dueAmount);
-        emit WithdrawalRequested(landlord, dueAmount);
-        emit WithdrawalRequested(renter, refund);
+        emit ContractEnded(currentSecurityDeposit, dueAmount);
 
         // Reset contract state
         currentSecurityDeposit = 0;
